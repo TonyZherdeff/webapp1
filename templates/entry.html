@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block body %}
+<h2>{{ the_title }}</h2>
+<form method='POST' action='/get_data'>
+    <p>Text, pls!</p>
+    <table>
+        <tr>
+            <td>Text </td>
+            <td><input name='data_txt' type='text' width='60'></td>
+        </tr>
+    </table>
+    <p>Go button</p>
+    <p><input value="Do it!" type="submit"></p>
+</form>
+
+{% endblock %}

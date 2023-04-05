@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block body %}
+<h2>{{ the_title }}</h2>
+<form method='POST' action='/num_input'>
+    <p>Введите шестизначное число для проверки</p>
+    <table>
+        <tr>
+            <td>Ввод: </td>
+            <td><input name='data_txt' type='text' width='60'></td>
+        </tr>
+    </table>
+    <p>Go button</p>
+    <p><input value="Do it!" type="submit"></p>
+</form>
+
+{% endblock %}
